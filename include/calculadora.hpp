@@ -8,5 +8,4 @@ class Calculadora {
         double Executar(double n1, double n2, IOPeracoes& operacao) const;
 };
 
-
-#endif CALCULADORA_H
+#endif // CALCULADORA
