@@ -6,6 +6,7 @@
 class Calculadora {
     public:
         double Executar(double n1, double n2, IOPeracoes& operacao) const;
+        static void MostrarHoras();
 };
 
 #endif // CALCULADORA

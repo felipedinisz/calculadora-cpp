@@ -17,7 +17,8 @@ int main () {
     Subtracao opSub;
     Multiplicacao opMult;
     Divisao opDiv;
-    double resultado;
+    double num1, num2, resultado;
+
 
     std::cout << "Bem-vindo, o que faremos hoje?" << std::endl;
 
@@ -30,6 +31,7 @@ int main () {
         std::cout << "2- Subtrair" << std::endl;
         std::cout << "3- Multiplicar" << std::endl;
         std::cout << "4- Dividir" << std::endl;
+        std::cout << "5- Mostrar horário atual" << std::endl;
         formatador();
 
         int escolha;
@@ -41,17 +43,22 @@ int main () {
             break; 
         }
 
-        if (escolha > 4 || escolha < 0) {
+        if (escolha > 5 || escolha < 0) {
             std::cout << "Opção Inválida" << std::endl;
+            continue;
+        } else if (escolha == 5) {
+            espacoembranco();
+            calc.MostrarHoras();
             continue;
         }
 
-        double num1, num2;
         std::cout << "Entre o primeiro número: ";
         std::cin >> num1;
 
         std::cout << "Entre o segundo número: ";
         std::cin >> num2;
+
+
 
         switch (escolha)
         {
